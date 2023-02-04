@@ -8,15 +8,15 @@ router.get('/', async (req, res) => {
   try{
     const categoryData = await Category.findAll({
       include: [{ model: Product }],
-      attributes: {
-        include: [
-          [
-            sequelize.literal(
-              `SELECT * from Product WHERE id = Catergory.id`
-            ),
-          ],
-        ],
-      },
+       attributes: {
+         include: [
+           [
+             sequelize.literal(
+               `SELECT * from products AS product WHERE product.catergory_id = Catergory.id`
+             ),
+           ],
+         ],
+       },
     });
     res.status(200).json(categoryData);
   } catch (err) {
