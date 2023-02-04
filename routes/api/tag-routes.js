@@ -22,7 +22,7 @@ router.get('/:id', async (req, res) => {
     const tagData = await Tag.findByPk(req.params.id,
       {include: [{model: Product}]});
     if(!tagData){
-      res.status(404).json({messge:'No category with this id! :('});
+      res.status(404).json({messge:'No tag with this id! :('});
       return;
     } 
     res.status(200).json(tagData);
@@ -73,7 +73,7 @@ router.delete('/:id', async (req, res) => {
       },
     });
     if (!tagData) {
-      res.status(404).json({ message: 'No category with this id! :('});
+      res.status(404).json({ message: 'No tag with this id! :('});
       return;
     }
     res.status(200).json(tagData);
