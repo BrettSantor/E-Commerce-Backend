@@ -5,7 +5,7 @@ const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
 
 
-Product.belongsto(Category, {
+Product.belongsTo(Category, {
   foreignKey: 'catergory_id'
 })
 
