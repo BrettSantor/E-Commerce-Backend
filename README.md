@@ -3,7 +3,7 @@
 ![badmath](https://img.shields.io/badge/Built%20With-express-yellow)
 ![badmath](https://img.shields.io/badge/Built%20With-JavaScript-brightgreen)
 ## description
-[Click this link to see this app in Action.](https://drive.google.com/file/d/1A5DiEXqG-wY9yiNZ6GSklzPROiWkdIkd/view)
+[Click this link to see this app in Action.](https://drive.google.com/file/d/1YZbfgFXjDn9leq0QHzkPcC4t4krJgJaA/view)
 This is the database for an e-commerce website. It shows the functionality of a common back end using sequilize to manipulate the database that is created by mysql while also using dotenv to keep database credentials safe and express.js to create and use routes to use sequilize.
 
 | Technology Used         | Resource URL           | 
